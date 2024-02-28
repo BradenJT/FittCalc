@@ -6,6 +6,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('src/modules/pages/Home/IndexPage.vue') }],
   },
+  {
+    path: '/WeightConversion',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('src/modules/pages/WeightConversion/WeightConversionPage.vue') }],
+  },
 
   // Always leave this as last one,
   // but you can also remove it
